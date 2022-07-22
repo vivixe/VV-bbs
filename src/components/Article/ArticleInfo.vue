@@ -1,7 +1,7 @@
 <!--
  * @Author: vivi.
  * @Date: 2022-07-22 18:10:50
- * @LastEditTime: 2022-07-22 20:02:00
+ * @LastEditTime: 2022-07-22 21:54:42
  * @FilePath: \demo-toutiao\src\components\Article\ArticleInfo.vue
  * @Description:
 -->
@@ -73,5 +73,9 @@ export default {
   .thumb-box{
     display: flex;
     justify-content: space-between;
+    // img{
+    //   box-sizing: border-box;
+    //   border: 2px solid white;
+    // }
   }
 </style>

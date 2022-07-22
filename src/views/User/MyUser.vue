@@ -1,7 +1,7 @@
 <!--
  * @Author: vivi.
  * @Date: 2022-07-22 15:49:13
- * @LastEditTime: 2022-07-22 19:24:36
+ * @LastEditTime: 2022-07-22 21:59:51
  * @FilePath: \demo-toutiao\src\views\User\MyUser.vue
  * @Description:
 -->
@@ -16,7 +16,7 @@
             <span class="username">肥肥狗</span>
         </template>
         <template #label>
-            <van-tag color="#fff" text-color="#ee0a24">前端开发</van-tag>
+            <van-tag color="#fff" text-color="#f9552f">前端开发</van-tag>
         </template>
       </van-cell>
 
@@ -56,11 +56,11 @@ export default {
 <style lang="less" scoped>
 .user-container {
   .user-card{
-    background-color: #fc5531;
+    background-color: #f9552f;
     color: white;
     padding-top: 20px;
     .van-cell{
-      background-color: #fc5531;
+      background-color: #f9552f;
       color: white;
       &::after{
         display: none;
