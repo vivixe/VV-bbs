@@ -1,20 +1,20 @@
 <!--
  * @Author: vivi.
  * @Date: 2022-07-22 15:48:08
- * @LastEditTime: 2022-07-22 20:08:44
+ * @LastEditTime: 2022-07-22 20:43:07
  * @FilePath: \demo-toutiao\src\views\Home\MyHome.vue
  * @Description:
 -->
 <template>
   <div class="home-container">
     <van-nav-bar title="" fixed>
-  <template #left>
-    <van-icon name="search" size="18" />
-  </template>
-  <template #right>
-    <van-icon name="search" size="18" />
-  </template>
-</van-nav-bar>
+      <template #left>
+        <van-icon name="tv-o" size="30" />
+      </template>
+      <template #right>
+        <van-icon name="search" size="28" @click="search" />
+      </template>
+    </van-nav-bar>
     <ArticleInfo
       v-for="item in artlist"
       :key="item.id"
@@ -44,6 +44,10 @@ export default {
     async initArticleList () {
       const { data: res } = await getArticleListAPI(this.page, this.limit)
       this.artlist = res
+    },
+    // 搜索按钮点击事件
+    search () {
+      console.log('search')
     }
   },
   components: {
